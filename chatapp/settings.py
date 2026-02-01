@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'account',
     'chat',
+    'groupchat',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -148,5 +150,19 @@ SESSION_COOKIE_AGE = 60 * 60  # 2
 
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+
+#channels 
+
+ASGI_APPLICATION = 'chatapp.asgi.application'
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [("127.0.0.1", 6379)],
+        },
+    },
+}
+
 
 
