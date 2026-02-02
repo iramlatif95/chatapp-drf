@@ -8,6 +8,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 from.models import User 
 
+
 class RegisterViewSet(viewsets.ModelViewSet):
     queryset=User.objects.all()
     serializer_class=RegisterSerializer
@@ -26,6 +27,7 @@ class LoginViewSet(viewsets.ModelViewSet):
     serializer_class=Loginserializer 
     permission_classes=[AllowAny]
     http_method_names=['post']
+    
 
     
     def create(self,request,*args,**kwargs):

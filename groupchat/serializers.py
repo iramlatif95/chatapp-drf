@@ -1,14 +1,11 @@
 from rest_framework import serializers 
 from .models import Group,GroupMessage
 from django.contrib.auth import get_user_model
-
-
 User = get_user_model()
   
 
 class GroupSerializer(serializers.ModelSerializer):
-    memebers=serializers.StringRelatedField(many=True,read_only=True)
-    
+    members=serializers.StringRelatedField(many=True,read_only=True)
     
     class Meta:
         model=Group 
@@ -19,7 +16,7 @@ class GroupMessageSerializer(serializers.ModelSerializer):
     display_content=serializers.SerializerMethodField()
     class Meta:
         model=GroupMessage
-        fields=['group','created_at','sender','display_content']
+        fields=['id','group','created_at','sender','content','display_content']
 
     def get_display_content(self, obj):
         user = self.context['request'].user

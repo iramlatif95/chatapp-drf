@@ -3,6 +3,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from .models import Group, GroupMessage
 from .serializers import GroupSerializer, GroupMessageSerializer
+from rest_framework.throttling import UserRateThrottle
 
 
 class GroupViewSet(viewsets.ModelViewSet):
@@ -16,14 +17,24 @@ class GroupViewSet(viewsets.ModelViewSet):
 
 
 class GroupMessagesViewSet(viewsets.ModelViewSet):
+    queryset=GroupMessage.objects.all()
     serializer_class = GroupMessageSerializer
     permission_classes = [IsAuthenticated]
+    throttle_classes = [UserRateThrottle]
 
     def get_queryset(self):
-        group_id = self.request.query_params.get('group_id')
-        if group_id:
-            return GroupMessage.objects.filter(group__group_id=group_id)
-        return GroupMessage.objects.none()
+        user = self.request.user
+        group_id = self.request.query_params.get('group')
+
+        if not group_id:
+            return GroupMessage.objects.filter(
+            group__members=user
+        ).order_by('created_at')
+
+        return GroupMessage.objects.filter(
+        group__id=group_id,
+        group__members=user
+        ).order_by('created_at')
 
     def perform_create(self, serializer):
         serializer.save(sender=self.request.user)

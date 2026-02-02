@@ -34,24 +34,14 @@ class MessageSerializer(serializers.ModelSerializer):
     def get_display_content(self, obj):
             user = self.context['request'].user
 
-    # Only receiver sees "This message was deleted" if sender deleted it
+    
             if obj.sender in obj.deleted_by.all() and user != obj.sender:
                 return "This message was deleted"
 
-    # Sender always sees original content
+    
             return obj.content
 
-    """def get_display_content(self,obj):
-        user=self.context['request'].user 
-
-        if user in obj.deleted_by.all():
-            return obj.content
-        
-        if obj.sender in obj.deleted_by.all():
-            return "this message is deleted"
-        
-        return obj.content"""
-
+   
         
 
     

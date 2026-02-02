@@ -5,6 +5,7 @@ from rest_framework.permissions import IsAuthenticated
 from.models import Chat,Message 
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.throttling import UserRateThrottle
 from django.contrib.auth import get_user_model
 User = get_user_model()
 
@@ -22,6 +23,7 @@ class MessageViewSet(viewsets.ModelViewSet):
     queryset=Message.objects.all()
     serializer_class=MessageSerializer
     permission_classes=[IsAuthenticated]
+    throttle_classes = [UserRateThrottle]
 
     def perform_create(self, serializer):
 

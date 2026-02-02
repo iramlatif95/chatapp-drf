@@ -42,11 +42,13 @@ INSTALLED_APPS = [
     'chat',
     'groupchat',
     'channels',
+    'axes',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'axes.middleware.AxesMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -163,6 +165,29 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.UserRateThrottle',
+        'rest_framework.throttling.AnonRateThrottle',
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+
+        'user': '60/minute',
+    }
+}
+
+AXES_FAILURE_LIMIT = 5          # 5 wrong attempts
+AXES_COOLOFF_TIME = 1           # 1 hour lock
+AXES_LOCK_OUT_AT_FAILURE = True
+AXES_RESET_ON_SUCCESS = True
+
+AXES_ONLY_USER_FAILURES = False
+AXES_LOCKOUT_CALLABLE = None
+
+
+
 
 
 
