@@ -13,12 +13,15 @@ class GroupSerializer(serializers.ModelSerializer):
 
 class GroupMessageSerializer(serializers.ModelSerializer):
     sender=serializers.StringRelatedField(read_only=True)
-    display_content=serializers.SerializerMethodField()
+    content=serializers.CharField(write_only=True)
+    messages=serializers.SerializerMethodField()
     class Meta:
         model=GroupMessage
-        fields=['id','group','created_at','sender','content','display_content']
+        fields=['id','group','created_at','sender','content','messages']
 
-    def get_display_content(self, obj):
+
+    
+    def get_messages(self, obj):
         user = self.context['request'].user
 
     

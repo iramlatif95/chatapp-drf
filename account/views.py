@@ -7,6 +7,8 @@ from rest_framework.permissions import AllowAny
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 from.models import User 
+from axes.exceptions import AxesBackendPermissionDenied
+
 
 
 class RegisterViewSet(viewsets.ModelViewSet):
@@ -33,7 +35,10 @@ class LoginViewSet(viewsets.ModelViewSet):
     def create(self,request,*args,**kwargs):
         username=request.data.get('username')
         password=request.data.get('password')
-        user=authenticate(request,username=username,password=password)
+        try:
+                user=authenticate(request,username=username,password=password)
+        except AxesBackendPermissionDenied:
+             return Response({"error":"you are block try after the 1 hour"},status=status.HTTP_403_FORBIDDEN)
         if user:
             login(request,user)
             request.session.set_expiry(60*60)

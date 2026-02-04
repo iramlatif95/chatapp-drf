@@ -11,7 +11,7 @@ User = get_user_model()
 
 
 class ChatViewSet(viewsets.ModelViewSet):
-    queryset=Chat.objects.all()
+    queryset=Chat.objects.all() #drf ignore it when we used the get_query set 
     serializer_class=ChatSerialzier
     permission_classes=[IsAuthenticated]
 

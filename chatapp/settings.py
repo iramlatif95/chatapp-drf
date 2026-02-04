@@ -170,7 +170,7 @@ CHANNEL_LAYERS = {
 REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_CLASSES': [
         'rest_framework.throttling.UserRateThrottle',
-        'rest_framework.throttling.AnonRateThrottle',
+        #'rest_framework.throttling.AnonRateThrottle',
     ],
     'DEFAULT_THROTTLE_RATES': {
 
@@ -178,13 +178,28 @@ REST_FRAMEWORK = {
     }
 }
 
-AXES_FAILURE_LIMIT = 5          # 5 wrong attempts
-AXES_COOLOFF_TIME = 1           # 1 hour lock
-AXES_LOCK_OUT_AT_FAILURE = True
+AUTHENTICATION_BACKENDS = [
+    'axes.backends.AxesBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+AXES_LOCKOUT_PARAMETERS = ["username", "ip_address"]
+
+# Count failures only per user, not per IP
+AXES_ONLY_USER_FAILURES = True
+
+# Reset attempts after successful login
 AXES_RESET_ON_SUCCESS = True
 
-AXES_ONLY_USER_FAILURES = False
-AXES_LOCKOUT_CALLABLE = None
+# Track attempts in DB (recommended)
+AXES_HANDLER = 'axes.handlers.database.AxesDatabaseHandler'
+
+# Number of allowed failed attempts
+AXES_FAILURE_LIMIT = 5
+
+# Lockout time
+AXES_COOLOFF_TIME = 1  # 1 hour
+
 
 
 

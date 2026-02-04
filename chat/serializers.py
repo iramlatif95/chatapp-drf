@@ -22,16 +22,17 @@ class MessageSerializer(serializers.ModelSerializer):
     chat = serializers.SlugRelatedField(queryset=Chat.objects.all(), slug_field='chatid')
     user1 = serializers.CharField(source='chat.user1.username', read_only=True)
     user2 = serializers.CharField(source='chat.user2.username', read_only=True)
+    content=serializers.CharField(write_only=True)
     
 
     
-    display_content=serializers.SerializerMethodField()
+    messages=serializers.SerializerMethodField()
     class Meta:
         model=Message
         fields=['id', 'chat', 'sender', 'user1', 'user2',
-            'content', 'display_content', 'deleted_by', 'created_at']  
+            'content', 'messages', 'deleted_by', 'created_at']  
 
-    def get_display_content(self, obj):
+    def get_messages(self, obj):
             user = self.context['request'].user
 
     
