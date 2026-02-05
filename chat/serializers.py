@@ -20,17 +20,26 @@ class ChatSerialzier(serializers.ModelSerializer):
 class MessageSerializer(serializers.ModelSerializer):
     sender = serializers.SlugRelatedField(read_only=True, slug_field='username')
     chat = serializers.SlugRelatedField(queryset=Chat.objects.all(), slug_field='chatid')
-    user1 = serializers.CharField(source='chat.user1.username', read_only=True)
-    user2 = serializers.CharField(source='chat.user2.username', read_only=True)
+    receiver=serializers.SerializerMethodField()
+    #user1 = serializers.CharField(source='chat.user1.username', read_only=True)
+    #user2 = serializers.CharField(source='chat.user2.username', read_only=True)
+    #deleted_by=serializers.CharField(write_only=True)
     content=serializers.CharField(write_only=True)
+
+
     
 
     
     messages=serializers.SerializerMethodField()
     class Meta:
         model=Message
-        fields=['id', 'chat', 'sender', 'user1', 'user2',
-            'content', 'messages', 'deleted_by', 'created_at']  
+        fields=['id', 'chat', 'sender','receiver',
+            'content', 'messages','created_at',]  
+        
+    def get_receiver(self,obj):
+        if obj.sender==obj.chat.user1:
+                return obj.chat.user2.username
+        return obj.chat.user1.username
 
     def get_messages(self, obj):
             user = self.context['request'].user
