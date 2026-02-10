@@ -9,7 +9,7 @@ class Group(models.Model):
     members=models.ManyToManyField(settings.AUTH_USER_MODEL,related_name='joined_groups')
     created_at=models.DateTimeField(auto_now_add=True)
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='created_groups')
-    
+   
 
     def __str__(self):
         return self.name  
@@ -25,6 +25,8 @@ class GroupMessage(models.Model):
     deleted_by=models.ManyToManyField(settings.AUTH_USER_MODEL,blank=True,related_name='deleted_gropmessages')
     created_at=models.DateTimeField(auto_now_add=True)
     sender=models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE,related_name='sendgroup_messages')
+    image = models.ImageField(upload_to="chat_images/",blank=True,null=True)
+    audio = models.FileField(upload_to="chat_audio/",blank=True,null=True)
 
 
 

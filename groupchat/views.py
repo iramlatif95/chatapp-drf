@@ -7,6 +7,7 @@ from rest_framework.exceptions import PermissionDenied
 from uuid import UUID
 from .models import Group, GroupMessage
 from .serializers import GroupSerializer, GroupMessageSerializer
+from rest_framework.parsers import MultiPartParser, FormParser
 
 class GroupViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all()
@@ -35,6 +36,17 @@ class GroupViewSet(viewsets.ModelViewSet):
 
         group.members.add(user)
         return Response({"detail": "Joined group successfully"}, status=status.HTTP_200_OK)
+    
+    @action(detail=True, methods=['post'])
+    def leave(self, request, pk=None):
+        group = self.get_object()
+        user = request.user
+
+        if user not in group.members.all():
+            return Response({"detail": "You are not a member of this group"}, status=status.HTTP_400_BAD_REQUEST)
+
+        group.members.remove(user)
+        return Response({"detail": "Left group successfully"}, status=status.HTTP_200_OK)
 
 
 
@@ -43,6 +55,7 @@ class GroupMessagesViewSet(viewsets.ModelViewSet):
     serializer_class = GroupMessageSerializer
     permission_classes = [IsAuthenticated]
     throttle_classes = [UserRateThrottle]
+    parser_classes = (MultiPartParser, FormParser)
 
     def get_queryset(self):
         

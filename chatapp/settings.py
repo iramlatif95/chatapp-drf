@@ -43,9 +43,13 @@ INSTALLED_APPS = [
     'groupchat',
     'channels',
     'axes',
+    'corsheaders',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware', 
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'axes.middleware.AxesMiddleware',
@@ -183,22 +187,54 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
 
-AXES_LOCKOUT_PARAMETERS = ["username", "ip_address"]
-
-# Count failures only per user, not per IP
-AXES_ONLY_USER_FAILURES = True
-
-# Reset attempts after successful login
+AXES_LOCKOUT_PARAMETERS = ["username"]
 AXES_RESET_ON_SUCCESS = True
-
-# Track attempts in DB (recommended)
 AXES_HANDLER = 'axes.handlers.database.AxesDatabaseHandler'
 
-# Number of allowed failed attempts
 AXES_FAILURE_LIMIT = 5
+AXES_COOLOFF_TIME = 1
+AXES_VERBOSE = True
 
-# Lockout time
-AXES_COOLOFF_TIME = 1  # 1 hour
+
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:5500",
+]
+
+# Allow cookies/session authentication
+CORS_ALLOW_CREDENTIALS = True  
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://127.0.0.1:5500",  # your frontend origin
+    "http://localhost:5500",  # optional if you use localhost
+
+]
+
+# Session & CSRF for local development
+#SESSION_COOKIE_SAMESITE = "None"
+#SESSION_COOKIE_SECURE = False
+#CSRF_COOKIE_SAMESITE = "None"
+#CSRF_COOKIE_SECURE = False
+
+SESSION_COOKIE_SAMESITE = "Lax"  # allow sending cookies with cross-origin requests for local dev
+SESSION_COOKIE_SECURE = False     # local dev, not HTTPS
+CSRF_COOKIE_SAMESITE = "Lax"
+CSRF_COOKIE_SECURE = False  
+
+import os
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")  
+
+
+INTERNAL_IPS = [
+    '127.0.0.1',  # localhost
+]
+
+
+
+
+
+
 
 
 

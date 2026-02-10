@@ -8,6 +8,8 @@ from rest_framework import status
 from rest_framework.throttling import UserRateThrottle
 from django.contrib.auth import get_user_model
 User = get_user_model()
+from rest_framework.parsers import MultiPartParser, FormParser
+
 
 
 class ChatViewSet(viewsets.ModelViewSet):
@@ -19,11 +21,13 @@ class ChatViewSet(viewsets.ModelViewSet):
         user=self.request.user 
         return Chat.objects.filter(user1=user)| Chat.objects.filter(user2=user)
 
+
 class MessageViewSet(viewsets.ModelViewSet):
     queryset=Message.objects.all()
     serializer_class=MessageSerializer
     permission_classes=[IsAuthenticated]
     throttle_classes = [UserRateThrottle]
+    parser_classes = (MultiPartParser, FormParser)
 
     def perform_create(self, serializer):
 

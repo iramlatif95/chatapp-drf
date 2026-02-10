@@ -1,5 +1,4 @@
 from rest_framework import serializers 
-#from django.contrib.auth.models import User 
 from.models import Chat,Message 
 from django.contrib.auth import get_user_model
 User = get_user_model()
@@ -24,17 +23,16 @@ class MessageSerializer(serializers.ModelSerializer):
     #user1 = serializers.CharField(source='chat.user1.username', read_only=True)
     #user2 = serializers.CharField(source='chat.user2.username', read_only=True)
     #deleted_by=serializers.CharField(write_only=True)
-    content=serializers.CharField(write_only=True)
+    #content=serializers.CharField(write_only=True)
 
-
-    
-
-    
+    content = serializers.CharField(required=False, allow_blank=True)
+    image = serializers.ImageField(required=False, allow_null=True) 
+    audio = serializers.FileField(required=False,allow_null=True)
     messages=serializers.SerializerMethodField()
     class Meta:
         model=Message
         fields=['id', 'chat', 'sender','receiver',
-            'content', 'messages','created_at',]  
+            'content', 'messages','created_at','image','audio']  
         
     def get_receiver(self,obj):
         if obj.sender==obj.chat.user1:
