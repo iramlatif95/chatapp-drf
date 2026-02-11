@@ -10,10 +10,11 @@ from .serializers import GroupSerializer, GroupMessageSerializer
 from rest_framework.parsers import MultiPartParser, FormParser
 
 class GroupViewSet(viewsets.ModelViewSet):
-    queryset = Group.objects.all()
+    queryset = Group.objects.all().prefetch_related('members').select_related('created_by')
     serializer_class = GroupSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]  
 
+    
     def perform_create(self, serializer):
         
         name = serializer.validated_data['name']
@@ -23,17 +24,15 @@ class GroupViewSet(viewsets.ModelViewSet):
             created_by=user
         )
         group.members.add(user)
-        serializer.instance = group
+        serializer.instance = group  
 
     @action(detail=True, methods=['post'])
     def join(self, request, pk=None):
-        
         group = self.get_object()
         user = request.user
-
-        if user in group.members.all():
+        
+        if group.members.filter(id=user.id).exists():
             return Response({"detail": "Already a member"}, status=status.HTTP_200_OK)
-
         group.members.add(user)
         return Response({"detail": "Joined group successfully"}, status=status.HTTP_200_OK)
     
@@ -41,24 +40,23 @@ class GroupViewSet(viewsets.ModelViewSet):
     def leave(self, request, pk=None):
         group = self.get_object()
         user = request.user
-
-        if user not in group.members.all():
+       
+        if not group.members.filter(id=user.id).exists():
             return Response({"detail": "You are not a member of this group"}, status=status.HTTP_400_BAD_REQUEST)
-
         group.members.remove(user)
         return Response({"detail": "Left group successfully"}, status=status.HTTP_200_OK)
 
-
+    
+       
 
 class GroupMessagesViewSet(viewsets.ModelViewSet):
     queryset = GroupMessage.objects.all()
     serializer_class = GroupMessageSerializer
     permission_classes = [IsAuthenticated]
     throttle_classes = [UserRateThrottle]
-    parser_classes = (MultiPartParser, FormParser)
+    parser_classes = (MultiPartParser, FormParser)   
 
     def get_queryset(self):
-        
         user = self.request.user
         group_id = self.request.query_params.get('group')
 
@@ -71,28 +69,29 @@ class GroupMessagesViewSet(viewsets.ModelViewSet):
                 return queryset 
             if not Group.objects.filter(group_id=uuid_obj, members=user).exists():
                 return queryset
-
             queryset = GroupMessage.objects.filter(
                 group__group_id=uuid_obj
-            ).order_by('created_at')
+            ).select_related('sender', 'group') \
+            .prefetch_related('deleted_by') \
+            .order_by('created_at')
         else:
-        
+           
             queryset = GroupMessage.objects.filter(
                 group__members=user
-            ).order_by('created_at')
+            ).select_related('sender', 'group') \
+            .prefetch_related('deleted_by') \
+            .order_by('created_at')
 
         return queryset
 
     def perform_create(self, serializer):
-        
         group = serializer.validated_data['group']
         user = self.request.user
-
-        if user not in group.members.all():
+        if not group.members.filter(id=user.id).exists():
             raise PermissionDenied("You are not a member of this group")
-
         serializer.save(sender=user)
 
+    
     def destroy(self, request, *args, **kwargs):
         
         message = self.get_object()
@@ -105,7 +104,7 @@ class GroupMessagesViewSet(viewsets.ModelViewSet):
             )
 
         message.deleted_by.add(user)
-        message.save()
+        #message.save()
 
         return Response({"detail": "Message deleted"}, status=status.HTTP_200_OK)
 

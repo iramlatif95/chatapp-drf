@@ -5,25 +5,42 @@ User = get_user_model()
 
 
 class ChatSerialzier(serializers.ModelSerializer):
+    #user1 = serializers.SlugRelatedField(read_only=True, slug_field='username')
+    #user2 = serializers.SlugRelatedField(read_only=True, slug_field='username') 
+    #user1 = serializers.CharField(source='user1.username', read_only=True)
+    #user2 = serializers.CharField(source='user2.username', read_only=True)
     user1 = serializers.SlugRelatedField(queryset=User.objects.all(), slug_field='username')
     user2 = serializers.SlugRelatedField(queryset=User.objects.all(), slug_field='username')
+
+    
     class Meta:
         model=Chat
-        fields=['chatid','user1','user2','created_at']
+        fields=['chatid','user1','user2','created_at']  
 
-    def validate(self,data):
-        if data['user1']==data['user2']:
-            raise serializers.ValidationError("cannot create the chat with yourself")
-        return data
+    
+
+        def validate(self,data):
+                if data['user1']==data['user2']:
+                        raise serializers.ValidationError("cannot create the chat with yourself")
+                return data
+    
+
 
 class MessageSerializer(serializers.ModelSerializer):
+    #sender = serializers.SlugRelatedField(read_only=True, slug_field='username')
+    #chat = serializers.SlugRelatedField(read_only=True, slug_field='chatid')
+
     sender = serializers.SlugRelatedField(read_only=True, slug_field='username')
     chat = serializers.SlugRelatedField(queryset=Chat.objects.all(), slug_field='chatid')
     receiver=serializers.SerializerMethodField()
     #user1 = serializers.CharField(source='chat.user1.username', read_only=True)
     #user2 = serializers.CharField(source='chat.user2.username', read_only=True)
     #deleted_by=serializers.CharField(write_only=True)
-    #content=serializers.CharField(write_only=True)
+    #content=serializers.CharField(write_only=True)   
+
+    #sender = serializers.CharField(source='sender.username', read_only=True)
+    
+    #chat = serializers.CharField(source='chat.chatid', read_only=True)
 
     content = serializers.CharField(required=False, allow_blank=True)
     image = serializers.ImageField(required=False, allow_null=True) 

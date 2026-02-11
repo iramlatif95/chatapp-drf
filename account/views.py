@@ -7,7 +7,10 @@ from rest_framework.permissions import AllowAny
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 from.models import User 
-from axes.exceptions import AxesBackendPermissionDenied 
+from axes.exceptions import AxesBackendPermissionDenied    
+import logging
+logger = logging.getLogger('accounts')
+
 
 
 
@@ -23,8 +26,11 @@ class RegisterViewSet(viewsets.ModelViewSet):
     def create(self,request,*args,**kwargs):
         serializer=self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        user=serializer.save()
-        return Response({"message":"user registration is successfull"},status=status.HTTP_201_CREATED)
+        user=serializer.save() 
+        send_welcome_email.delay(user.email, user.username) #celery
+        return Response({"message":"user registration is successfull"},status=status.HTTP_201_CREATED) 
+        logger.info(f"New user registered: {serializer.validated_data.get('username')}") # for loggin 
+
 
 
 class LoginViewSet(viewsets.ModelViewSet):
@@ -33,7 +39,9 @@ class LoginViewSet(viewsets.ModelViewSet):
     permission_classes=[AllowAny]
     http_method_names=['post']
 
-    def create(self,request,*args,**kwargs):
+    def create(self,request,*args,**kwargs): 
+        logger.info(f"User logged in: {request.user}") # for the loggin 
+
         username=request.data.get('username')
         password=request.data.get('password')
         try:
@@ -48,6 +56,9 @@ class LoginViewSet(viewsets.ModelViewSet):
     
 
 class logoutView(APIView):
+    def post(self, request):
+            logger.info(f"User logged out: {request.user}") # flor logging
+
     permission_classes=[IsAuthenticated]
 
     def post(self,request):
