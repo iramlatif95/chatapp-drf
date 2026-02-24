@@ -24,6 +24,8 @@ urlpatterns = [
     path('', include('account.urls')),
     path('chat/', include('chat.urls')), 
     path('groupchat/', include('groupchat.urls')),
+    #path('audit/', include('audit.urls')), 
+   
 ]
 if settings.DEBUG:
     urlpatterns += static(

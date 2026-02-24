@@ -2,7 +2,6 @@
 ASGI config for chatapp project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
-"""
 
 import os
 from django.core.asgi import get_asgi_application
@@ -23,4 +22,38 @@ application = ProtocolTypeRouter({
             groupchat.routing.websocket_urlpatterns
         )
     ),
+})"""     
+
+
+"""import os
+from channels.routing import ProtocolTypeRouter, URLRouter
+from channels.auth import AuthMiddlewareStack
+from django.core.asgi import get_asgi_application
+import chat.routing
+import groupchat.routing
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'chatapp.settings')
+
+application = ProtocolTypeRouter({
+    "http": get_asgi_application(),
+    "websocket": AuthMiddlewareStack(
+        URLRouter(
+            chat.routing.websocket_urlpatterns + groupchat.routing.websocket_urlpatterns
+        )
+    ),
+})""" 
+
+from channels.routing import ProtocolTypeRouter, URLRouter
+from channels.auth import AuthMiddlewareStack
+from django.core.asgi import get_asgi_application
+import chat.routing
+
+application = ProtocolTypeRouter({
+    "http": get_asgi_application(),
+    "websocket": AuthMiddlewareStack(
+        URLRouter(
+            chat.routing.websocket_urlpatterns
+        )
+    ),
 })
+

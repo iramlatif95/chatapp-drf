@@ -7,11 +7,11 @@ User = get_user_model()
 class GroupSerializer(serializers.ModelSerializer):
     members=serializers.StringRelatedField(many=True,read_only=True)
     created_by = serializers.StringRelatedField(read_only=True)
-
-    
     class Meta:
         model=Group 
-        fields='__all__'
+        fields='__all__' 
+
+
 
 class GroupMessageSerializer(serializers.ModelSerializer):
     sender=serializers.StringRelatedField(read_only=True)
@@ -19,17 +19,20 @@ class GroupMessageSerializer(serializers.ModelSerializer):
     is_sender = serializers.SerializerMethodField()
     content = serializers.CharField(required=False, allow_blank=True) 
     image = serializers.ImageField(required=False, allow_null=True)
-    audio = serializers.FileField(required=False,allow_null=True) 
+    audio = serializers.FileField(required=False,allow_null=True)  
     class Meta:
         model=GroupMessage
-        fields=['id','group','created_at','sender','content','messages','is_sender','image','audio','file']
-
-    def get_is_sender(self, obj):
-        request = self.context.get('request')
-        return request and request.user == obj.sender
-
-
+        fields=['id','group','created_at','sender','content','messages','is_sender','image','audio','file',]
     
+    def get_is_sender(self, obj):
+            user = self.context.get('user')
+            if not user and self.context.get('request'):
+                user = self.context['request'].user
+            if not user:
+                return False
+            return user.id == obj.sender.id
+
+
     def get_messages(self, obj):
         user = self.context['request'].user
 
@@ -43,6 +46,8 @@ class GroupMessageSerializer(serializers.ModelSerializer):
 
     
         return obj.content
+
+
 
 
 

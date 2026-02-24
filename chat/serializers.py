@@ -5,76 +5,65 @@ User = get_user_model()
 
 
 class ChatSerialzier(serializers.ModelSerializer):
-    #user1 = serializers.SlugRelatedField(read_only=True, slug_field='username')
-    #user2 = serializers.SlugRelatedField(read_only=True, slug_field='username') 
-    #user1 = serializers.CharField(source='user1.username', read_only=True)
-    #user2 = serializers.CharField(source='user2.username', read_only=True)
-    user1 = serializers.SlugRelatedField(queryset=User.objects.all(), slug_field='username')
-    user2 = serializers.SlugRelatedField(queryset=User.objects.all(), slug_field='username')
 
-    
+    user1_username = serializers.CharField(source='user1.username', read_only=True)
+    user2_username = serializers.CharField(source='user2.username', read_only=True) 
+    user1_name = serializers.CharField(write_only=True)
+    user2_name = serializers.CharField(write_only=True)
     class Meta:
         model=Chat
-        fields=['chatid','user1','user2','created_at']  
+        fields=['chatid','created_at','user1_username','user2_username','user1_name','user2_name']  
 
+    def validate(self, data):
+        if data.get('user1_name') == data.get('user2_name'):
+            raise serializers.ValidationError("Cannot create a chat with yourself")
+        return data  
     
+    def create(self, validated_data):
+        user_names = [validated_data.pop('user1_name'), validated_data.pop('user2_name')]
 
-        def validate(self,data):
-                if data['user1']==data['user2']:
-                        raise serializers.ValidationError("cannot create the chat with yourself")
-                return data
+       
+        users = User.objects.filter(username__in=user_names)
+        if len(users) != 2:
+            raise serializers.ValidationError("One or both users not found")
+
+       
+        user_dict = {user.username: user for user in users}
+        chat = Chat.objects.create(
+            user1=user_dict[user_names[0]],
+            user2=user_dict[user_names[1]],
+            **validated_data
+        )
+        return chat  
     
-
+#from rest_framework import serializers
+#from .models import Message
 
 class MessageSerializer(serializers.ModelSerializer):
-    #sender = serializers.SlugRelatedField(read_only=True, slug_field='username')
-    #chat = serializers.SlugRelatedField(read_only=True, slug_field='chatid')
-
-    sender = serializers.SlugRelatedField(read_only=True, slug_field='username')
-    chat = serializers.SlugRelatedField(queryset=Chat.objects.all(), slug_field='chatid')
-    receiver=serializers.SerializerMethodField()
-    #user1 = serializers.CharField(source='chat.user1.username', read_only=True)
-    #user2 = serializers.CharField(source='chat.user2.username', read_only=True)
-    #deleted_by=serializers.CharField(write_only=True)
-    #content=serializers.CharField(write_only=True)   
-
-    #sender = serializers.CharField(source='sender.username', read_only=True)
-    
-    #chat = serializers.CharField(source='chat.chatid', read_only=True)
-
+    sender = serializers.CharField(source='sender.username', read_only=True)
+    receiver = serializers.CharField(write_only=True, required=True)  # only for input
     content = serializers.CharField(required=False, allow_blank=True)
-    image = serializers.ImageField(required=False, allow_null=True) 
-    audio = serializers.FileField(required=False,allow_null=True)
-    messages=serializers.SerializerMethodField()
+    image = serializers.ImageField(required=False, allow_null=True)
+    audio = serializers.FileField(required=False, allow_null=True)
+
     class Meta:
-        model=Message
-        fields=['id', 'chat', 'sender','receiver',
-            'content', 'messages','created_at','image','audio']  
-        
-    def get_receiver(self,obj):
-        if obj.sender==obj.chat.user1:
-                return obj.chat.user2.username
-        return obj.chat.user1.username
+        model = Message
+        fields = ['id', 'sender', 'receiver', 'content', 'created_at', 'image', 'audio']
 
-    def get_messages(self, obj):
-            user = self.context['request'].user
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        request_user = self.context['request'].user
 
-    
-            if obj.sender in obj.deleted_by.all() and user != obj.sender:
-                return "This message was deleted"
+       
+        data['receiver_username'] = instance.chat.user2.username if instance.sender_id == instance.chat.user1_id else instance.chat.user1.username
 
-    
-            return obj.content
+     
+        if instance.deleted_by.exists() and request_user != instance.sender:
+            data['content'] = "This message was deleted"
 
-   
-        
+        return data 
 
     
 
 
-
-
-         
-    
-    
 

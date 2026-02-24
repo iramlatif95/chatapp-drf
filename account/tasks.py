@@ -1,15 +1,14 @@
+# vege/tasks.py
 from celery import shared_task
 from django.core.mail import send_mail
+from django.conf import settings
 
 @shared_task
-def send_welcome_email(user_email, username):
-    """
-    Send a welcome email asynchronously after registration.
-    """
-    subject = "Welcome to ChatApp!"
-    message = f"Hi {username},\n\nThank you for registering in ChatApp. Enjoy chatting!"
-    from_email = "iramlatif32@gmail.com"  # Replace with your email
+def send_welcome_email(user_email, user_name):
+    subject = f"Welcome to ChatApp, {user_name}!"
+    message = f"Hi {user_name},\n\nWelcome to ChatApp! We are glad to have you here."
+    from_email = settings.DEFAULT_FROM_EMAIL
     recipient_list = [user_email]
 
-    send_mail(subject, message, from_email, recipient_list, fail_silently=False)
+    send_mail(subject, message, from_email, recipient_list)
     return f"Welcome email sent to {user_email}"

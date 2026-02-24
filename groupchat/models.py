@@ -16,9 +16,6 @@ class Group(models.Model):
     class Meta:
         unique_together=('name','created_by')
 
- 
-    
-
 class GroupMessage(models.Model):
     group=models.ForeignKey(Group,on_delete=models.CASCADE,related_name='groupmessages')
     content=models.TextField(max_length=500) 
@@ -27,7 +24,8 @@ class GroupMessage(models.Model):
     sender=models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE,related_name='sendgroup_messages')
     image = models.ImageField(upload_to="chat_images/",blank=True,null=True)
     audio = models.FileField(upload_to="chat_audio/",blank=True,null=True) 
-    file = models.FileField(upload_to='doc_files/', blank=True, null=True)
+    file = models.FileField(upload_to='doc_files/', blank=True, null=True) 
+    
 
 
 

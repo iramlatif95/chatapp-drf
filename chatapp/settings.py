@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'axes',
     'corsheaders',
     'debug_toolbar',
+    'audit', 
+
 ]
 
 MIDDLEWARE = [
@@ -58,6 +60,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+   
+    'audit.middleware.AuditMiddleware',
+# custom middlewre 
 ]
 
 ROOT_URLCONF = 'chatapp.urls'
@@ -200,12 +205,12 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5500",
 ]
 
-# Allow cookies/session authentication
+
 CORS_ALLOW_CREDENTIALS = True  
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://127.0.0.1:5500",  # your frontend origin
-    "http://localhost:5500",  # optional if you use localhost
+    "http://127.0.0.1:5500",  
+    "http://localhost:5500",  
 
 ]
 
@@ -215,8 +220,8 @@ CSRF_TRUSTED_ORIGINS = [
 #CSRF_COOKIE_SAMESITE = "None"
 #CSRF_COOKIE_SECURE = False
 
-SESSION_COOKIE_SAMESITE = "Lax"  # allow sending cookies with cross-origin requests for local dev
-SESSION_COOKIE_SECURE = False     # local dev, not HTTPS
+SESSION_COOKIE_SAMESITE = "Lax"  
+SESSION_COOKIE_SECURE = False    
 CSRF_COOKIE_SAMESITE = "Lax"
 CSRF_COOKIE_SECURE = False  
 
@@ -287,15 +292,25 @@ LOGGING = {
 
 #celery 
 
-# Redis settings for Celery
+# Redis for Celery
 CELERY_BROKER_URL = 'redis://localhost:6379/0'
 CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
-CELERY_TIMEZONE = 'UTC'
+CELERY_TIMEZONE = 'UTC'  
+# format suffixas 
 
 
+
+# settings.py
+DEFAULT_FROM_EMAIL = 'your-email@example.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'iramlatif32@gmail.com'
+EMAIL_HOST_PASSWORD = 'your-email-password'  
 
 
 
