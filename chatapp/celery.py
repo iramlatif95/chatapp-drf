@@ -1,4 +1,4 @@
-# chatapp/celery.py
+
 import os
 from celery import Celery
 

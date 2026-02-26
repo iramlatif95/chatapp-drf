@@ -6,7 +6,7 @@ from rest_framework.throttling import UserRateThrottle
 from rest_framework.exceptions import PermissionDenied
 from uuid import UUID
 from .models import Group, GroupMessage
-from .serializers import GroupSerializer, GroupMessageSerializer
+from .serializers import GroupSerializer, GroupMessageSerializer   
 from rest_framework.parsers import MultiPartParser, FormParser  
 from .permissions import IsGroupOwnerOrReadOnly
 #from chat.pagination import ChatPagination
@@ -67,14 +67,14 @@ class GroupMessagesViewSet(viewsets.ModelViewSet):
                 return queryset 
             if not Group.objects.filter(group_id=uuid_obj, members=user).exists():
                 return queryset
-            queryset = GroupMessage.objects.filter(
+            queryset = GroupMessage.objects.filter(    # fetch all mes belong to this grp
                 group__group_id=uuid_obj
             ).select_related('sender', 'group') \
             .prefetch_related('deleted_by') \
             .order_by('created_at')
         else:
            
-            queryset = GroupMessage.objects.filter(
+            queryset = GroupMessage.objects.filter(  # as a memeber of that group 
                 group__members=user
             ).select_related('sender', 'group') \
             .prefetch_related('deleted_by') \

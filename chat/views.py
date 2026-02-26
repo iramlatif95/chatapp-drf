@@ -13,9 +13,8 @@ from django.db.models import Q,Prefetch
 from .pagination import ChatPagination  
 from django.db.models import Exists, OuterRef  
 from rest_framework import serializers    
-
-from channels.layers import get_channel_layer
-from asgiref.sync import async_to_sync
+#from channels.layers import get_channel_layer
+#from asgiref.sync import async_to_sync
 
 class ChatViewSet(viewsets.ModelViewSet):
     queryset=Chat.objects.all() #drf ignore it when we used the get_query set 

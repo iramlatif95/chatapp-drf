@@ -48069,3 +48069,191 @@ WARNING 2026-02-23 21:57:45,400 log Not Found: /ws/groupchat/90e59e95-6260-4785-
 WARNING 2026-02-23 21:57:45,400 log Not Found: /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/
 INFO 2026-02-23 21:57:45,437 basehttp - Broken pipe from ('127.0.0.1', 49980)
 INFO 2026-02-23 21:57:45,437 basehttp - Broken pipe from ('127.0.0.1', 49978)
+INFO 2026-02-24 00:38:30,843 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 00:39:38,533 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 00:41:21,689 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 00:41:48,984 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 00:42:03,292 log "GET / HTTP/1.1" 200 19190
+WARNING 2026-02-24 00:42:13,169 log Method Not Allowed: /login/
+WARNING 2026-02-24 00:42:13,171 log "GET /login/ HTTP/1.1" 405 21098
+INFO 2026-02-24 00:42:21,840 views User logged in: AnonymousUser
+INFO 2026-02-24 00:42:24,198 log "POST /login/ HTTP/1.1" 200 21100
+INFO 2026-02-24 00:42:36,295 log "GET /chat HTTP/1.1" 301 0
+INFO 2026-02-24 00:42:36,867 log "GET /chat/ HTTP/1.1" 200 19372
+INFO 2026-02-24 00:42:42,579 log "GET /chat/messages/ HTTP/1.1" 200 94547
+INFO 2026-02-24 00:42:51,149 log "GET /__debug__/render_panel/?request_id=60abb514bc824b90b840a12f49907f82&panel_id=SQLPanel HTTP/1.1" 200 43880
+WARNING 2026-02-24 00:43:58,644 log Not Found: /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/
+WARNING 2026-02-24 00:43:58,645 log "GET /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/ HTTP/1.1" 404 20794
+INFO 2026-02-24 01:32:14,453 autoreload C:\Users\expers\Desktop\chatapp\groupchat\views.py changed, reloading.
+INFO 2026-02-24 01:32:51,194 autoreload Watching for file changes with StatReloader
+INFO 2026-02-24 02:20:57,209 log "GET /groupchat/ HTTP/1.1" 200 117
+INFO 2026-02-24 02:26:54,754 autoreload C:\Users\expers\Desktop\chatapp\groupchat\views.py changed, reloading.
+INFO 2026-02-24 02:27:09,734 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 01:13:02,365 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 21:23:04,044 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 23:12:14,817 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 23:13:06,351 log "GET / HTTP/1.1" 200 19193
+INFO 2026-02-25 23:13:10,634 log "GET /__debug__/render_panel/?request_id=cdaea7f211334b75a263f07ab560695a&panel_id=SQLPanel HTTP/1.1" 200 13864
+WARNING 2026-02-25 23:13:15,278 log Method Not Allowed: /register/
+WARNING 2026-02-25 23:13:15,281 log "GET /register/ HTTP/1.1" 405 21524
+ERROR 2026-02-25 23:13:34,280 log Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\expers\Desktop\chatapp\account\views.py", line 30, in create
+    send_welcome_email.delay(user.email, user.username) #celery
+    ^^^^^^^^^^^^^^^^^^
+NameError: name 'send_welcome_email' is not defined
+ERROR 2026-02-25 23:13:34,427 log "POST /register/ HTTP/1.1" 500 119678
+INFO 2026-02-25 23:13:44,952 log "GET /__debug__/render_panel/?request_id=f2ed8ac3ac4d42e6986018132d5463b3&panel_id=SQLPanel HTTP/1.1" 200 19147
+INFO 2026-02-25 23:24:35,721 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-25 23:25:06,024 log Method Not Allowed: /login/
+WARNING 2026-02-25 23:25:06,026 log "GET /login/ HTTP/1.1" 405 21101
+INFO 2026-02-25 23:25:38,440 log "GET /__debug__/render_panel/?request_id=826c114b4f3842cfb4d3630698102be5&panel_id=SQLPanel HTTP/1.1" 200 13867
+INFO 2026-02-25 23:25:41,321 views User logged in: AnonymousUser
+WARNING 2026-02-25 23:25:44,524 log Unauthorized: /login/
+WARNING 2026-02-25 23:25:44,525 log "POST /login/ HTTP/1.1" 401 21073
+INFO 2026-02-25 23:25:47,974 log "GET /__debug__/render_panel/?request_id=21f1480f8f784ba4a5f8079872b7fb37&panel_id=SQLPanel HTTP/1.1" 200 70006
+INFO 2026-02-25 23:26:00,021 views User logged in: AnonymousUser
+INFO 2026-02-25 23:26:03,033 log "POST /login/ HTTP/1.1" 200 21102
+INFO 2026-02-25 23:26:05,585 log "GET /__debug__/render_panel/?request_id=fb29f13c7ce34be9ad00770faff0afc7&panel_id=SQLPanel HTTP/1.1" 200 68043
+INFO 2026-02-25 23:26:29,822 autoreload C:\Users\expers\Desktop\chatapp\account\views.py changed, reloading.
+INFO 2026-02-25 23:26:38,627 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 23:26:50,304 autoreload C:\Users\expers\Desktop\chatapp\account\views.py changed, reloading.
+INFO 2026-02-25 23:26:54,304 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 23:27:02,022 autoreload C:\Users\expers\Desktop\chatapp\account\views.py changed, reloading.
+INFO 2026-02-25 23:27:10,272 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 23:37:56,172 autoreload C:\Users\expers\Desktop\chatapp\groupchat\views.py changed, reloading.
+INFO 2026-02-25 23:38:12,070 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 23:38:23,404 autoreload C:\Users\expers\Desktop\chatapp\account\views.py changed, reloading.
+INFO 2026-02-25 23:38:32,982 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 23:38:37,136 autoreload C:\Users\expers\Desktop\chatapp\account\views.py changed, reloading.
+INFO 2026-02-25 23:38:44,533 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 23:39:14,601 autoreload C:\Users\expers\Desktop\chatapp\account\tasks.py changed, reloading.
+INFO 2026-02-25 23:39:21,637 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 23:39:37,291 autoreload C:\Users\expers\Desktop\chatapp\account\views.py changed, reloading.
+INFO 2026-02-25 23:39:46,306 autoreload Watching for file changes with StatReloader
+INFO 2026-02-25 23:48:26,943 log "GET /chat HTTP/1.1" 301 0
+INFO 2026-02-25 23:48:28,330 log "GET /chat/ HTTP/1.1" 200 19374
+INFO 2026-02-25 23:48:31,671 log "GET /__debug__/render_panel/?request_id=c6e09e85d7f64d6fbfcc2b262bd3524f&panel_id=SQLPanel HTTP/1.1" 200 22887
+INFO 2026-02-25 23:48:36,675 log "GET /chat/messages/ HTTP/1.1" 200 23079
+INFO 2026-02-25 23:48:42,492 log "GET /chat/messages/ HTTP/1.1" 200 23077
+INFO 2026-02-25 23:48:54,581 log "GET /chat/ HTTP/1.1" 200 19373
+INFO 2026-02-25 23:48:57,420 log "GET /chat/chats/ HTTP/1.1" 200 22747
+INFO 2026-02-25 23:49:05,520 log "GET /__debug__/render_panel/?request_id=28d76530456a4a739352f7cf010ad21f&panel_id=SQLPanel HTTP/1.1" 200 32073
+INFO 2026-02-25 23:49:07,697 log "POST /chat/chats/ HTTP/1.1" 201 22997
+INFO 2026-02-25 23:49:10,749 log "GET /__debug__/render_panel/?request_id=3b376a82b0234be19554b5b8e3dda536&panel_id=SQLPanel HTTP/1.1" 200 35845
+INFO 2026-02-25 23:49:27,348 log "GET /chat/ HTTP/1.1" 200 19375
+INFO 2026-02-25 23:49:30,058 log "GET /chat/messages/ HTTP/1.1" 200 23077
+INFO 2026-02-25 23:49:43,336 log "POST /chat/messages/ HTTP/1.1" 201 23378
+INFO 2026-02-25 23:49:48,177 log "GET /__debug__/render_panel/?request_id=ad2a24742d39465ab2e2fdeefe5303ff&panel_id=SQLPanel HTTP/1.1" 200 58801
+INFO 2026-02-25 23:49:53,389 log "GET /chat/messages/ HTTP/1.1" 200 23408
+INFO 2026-02-25 23:50:00,917 log "GET /__debug__/render_panel/?request_id=6b5c0def5ac44334a25ed56f2f9ac0b4&panel_id=SQLPanel HTTP/1.1" 200 41947
+INFO 2026-02-25 23:51:56,205 autoreload C:\Users\expers\Desktop\chatapp\account\views.py changed, reloading.
+INFO 2026-02-25 23:52:07,031 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-26 00:42:07,757 log Forbidden: /chat/messages/
+WARNING 2026-02-26 00:42:07,764 log "GET /chat/messages/ HTTP/1.1" 403 19003
+WARNING 2026-02-26 00:42:16,454 log Method Not Allowed: /login/
+WARNING 2026-02-26 00:42:16,456 log "GET /login/ HTTP/1.1" 405 21097
+INFO 2026-02-26 00:42:32,058 views User logged in: AnonymousUser
+INFO 2026-02-26 00:42:35,398 log "POST /login/ HTTP/1.1" 200 21102
+INFO 2026-02-26 00:42:37,962 log "GET /__debug__/render_panel/?request_id=485ce1a6bf3c477aafa6d3247af5413c&panel_id=SQLPanel HTTP/1.1" 200 82236
+INFO 2026-02-26 00:42:48,405 log "GET / HTTP/1.1" 200 19225
+WARNING 2026-02-26 00:42:51,818 log Method Not Allowed: /register/
+WARNING 2026-02-26 00:42:51,819 log "GET /register/ HTTP/1.1" 405 21559
+ERROR 2026-02-26 00:43:25,019 log Internal Server Error: /register/
+Traceback (most recent call last):
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\expers\AppData\Roaming\Python\Python314\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\expers\Desktop\chatapp\account\views.py", line 26, in create
+    send_welcome_email.delay(user.email, user.username) #celery
+    ^^^^^^^^^^^^^^^^^^
+NameError: name 'send_welcome_email' is not defined
+ERROR 2026-02-26 00:43:25,217 log "POST /register/ HTTP/1.1" 500 119818
+INFO 2026-02-26 00:46:57,412 autoreload C:\Users\expers\Desktop\chatapp\account\views.py changed, reloading.
+INFO 2026-02-26 00:47:06,054 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-26 00:48:40,037 log Bad Request: /register/
+WARNING 2026-02-26 00:48:40,039 log "POST /register/ HTTP/1.1" 400 21712
+INFO 2026-02-26 00:48:50,205 log "GET /__debug__/render_panel/?request_id=41ccab73a497450798bdbd2be7926842&panel_id=SQLPanel HTTP/1.1" 200 30656
+WARNING 2026-02-26 00:48:56,425 log Bad Request: /register/
+WARNING 2026-02-26 00:48:56,426 log "POST /register/ HTTP/1.1" 400 21711
+INFO 2026-02-26 00:49:31,324 log "POST /register/ HTTP/1.1" 201 21546
+INFO 2026-02-26 00:49:35,172 log "GET /__debug__/render_panel/?request_id=7fadab3cddcf49639826d8e3a258dc09&panel_id=SQLPanel HTTP/1.1" 200 37843
+INFO 2026-02-26 01:07:52,869 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:08:02,067 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:16:16,306 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:17:53,950 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:20:05,578 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:20:05,790 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:20:06,776 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:20:15,957 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:20:16,004 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:20:17,834 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:21:06,952 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:21:07,431 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:21:07,602 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:21:17,095 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:21:17,096 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:21:24,988 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:21:25,007 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:21:25,462 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:21:32,730 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:21:32,731 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:21:32,736 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:21:49,409 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:21:49,413 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:21:49,528 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:21:55,568 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:21:55,598 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:21:55,724 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:22:06,888 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:22:07,254 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:22:07,286 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:22:12,723 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:22:12,814 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:22:13,002 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:22:38,752 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:22:39,862 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:22:39,969 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:22:50,291 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:22:50,291 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:22:50,393 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:22:52,817 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:22:52,832 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:22:52,854 autoreload C:\Users\expers\Desktop\chatapp\chat\views.py changed, reloading.
+INFO 2026-02-26 01:22:58,154 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:22:58,328 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:22:58,438 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 01:26:37,866 autoreload Watching for file changes with StatReloader

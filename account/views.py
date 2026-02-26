@@ -7,13 +7,10 @@ from rest_framework.permissions import AllowAny
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 from.models import User 
-from axes.exceptions import AxesBackendPermissionDenied    
+from axes.exceptions import AxesBackendPermissionDenied   
+from .tasks import send_welcome_email 
 import logging
 logger = logging.getLogger('accounts')
-
-
-
-
 
 
 class RegisterViewSet(viewsets.ModelViewSet):
@@ -57,9 +54,9 @@ class LoginViewSet(viewsets.ModelViewSet):
 
 class logoutView(APIView):
     def post(self, request):
-            logger.info(f"User logged out: {request.user}") # flor logging
+        logger.info(f"User logged out: {request.user}") # flor logging
 
-    permission_classes=[IsAuthenticated]
+        permission_classes=[IsAuthenticated]
 
     def post(self,request):
         logout(request)
