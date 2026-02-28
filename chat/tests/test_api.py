@@ -14,7 +14,7 @@ class ChatAPITestCase(TestCase):
 
     def test_chat_list_authenticated(self):
         self.client.force_authenticate(user=self.user1)
-        response = self.client.get("/chats/")
+        response = self.client.get("/chat/chats/")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(len(response.data), 1)
         self.assertEqual(response.data[0]["chatid"], str(self.chat.chatid))
@@ -25,7 +25,8 @@ class ChatAPITestCase(TestCase):
             "receiver": self.user2.username,
             "content": "Hello there!"
         }
-        response = self.client.post("/messages/", data)
+        #response = self.client.post("/messages/", data)
+        response = self.client.post("/chat/messages/", data)
         self.assertEqual(response.status_code, 201)
         self.assertEqual(Message.objects.count(), 1)
         self.assertEqual(Message.objects.first().content, "Hello there!")
@@ -33,10 +34,10 @@ class ChatAPITestCase(TestCase):
     def test_message_delete_permission(self):
         self.client.force_authenticate(user=self.user1)
         message = Message.objects.create(chat=self.chat, sender=self.user1, content="Test delete")
-        # Delete by sender (allowed)
-        response = self.client.delete(f"/messages/{message.id}/")
+        response = self.client.delete(f"/chat/messages/{message.id}/") 
         self.assertEqual(response.status_code, 200)
         # Delete by other user (forbidden)
         self.client.force_authenticate(user=self.user2)
-        response = self.client.delete(f"/messages/{message.id}/")
+        response = self.client.delete(f"/chat/messages/{message.id}/?chatid={self.chat.chatid}")
+        #response = self.client.delete(f"/messages/{message.id}/")
         self.assertEqual(response.status_code, 403)

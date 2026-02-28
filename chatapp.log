@@ -48257,3 +48257,918 @@ INFO 2026-02-26 01:22:58,154 autoreload Watching for file changes with StatReloa
 INFO 2026-02-26 01:22:58,328 autoreload Watching for file changes with StatReloader
 INFO 2026-02-26 01:22:58,438 autoreload Watching for file changes with StatReloader
 INFO 2026-02-26 01:26:37,866 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 21:30:51,748 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 21:31:19,330 log "GET / HTTP/1.1" 200 23963
+WARNING 2026-02-26 21:31:20,475 log Not Found: /favicon.ico
+WARNING 2026-02-26 21:31:20,477 log "GET /favicon.ico HTTP/1.1" 404 20635
+WARNING 2026-02-26 21:31:24,523 log Method Not Allowed: /register/
+WARNING 2026-02-26 21:31:24,526 log "GET /register/ HTTP/1.1" 405 26295
+INFO 2026-02-26 21:32:34,945 autoreload C:\Users\expers\Desktop\chatapp\account\tasks.py changed, reloading.
+INFO 2026-02-26 21:32:47,982 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 21:35:48,154 autoreload C:\Users\expers\Desktop\chatapp\account\views.py changed, reloading.
+INFO 2026-02-26 21:36:08,743 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 21:37:54,634 autoreload C:\Users\expers\Desktop\chatapp\account\views.py changed, reloading.
+INFO 2026-02-26 21:38:11,107 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-26 21:43:19,893 log Bad Request: /register/
+WARNING 2026-02-26 21:43:19,910 log "POST /register/ HTTP/1.1" 400 26448
+INFO 2026-02-26 21:43:58,006 log "POST /register/ HTTP/1.1" 201 26284
+WARNING 2026-02-26 21:46:12,728 log Method Not Allowed: /register/
+WARNING 2026-02-26 21:46:12,730 log "GET /register/ HTTP/1.1" 405 40
+INFO 2026-02-26 21:46:29,541 log "POST /register/ HTTP/1.1" 201 46
+WARNING 2026-02-26 21:59:49,716 log Forbidden: /chat/messages/
+WARNING 2026-02-26 21:59:49,801 log "GET /chat/messages/ HTTP/1.1" 403 23776
+INFO 2026-02-26 21:59:50,050 log "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2026-02-26 21:59:50,050 log "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2026-02-26 21:59:50,062 log "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2026-02-26 21:59:50,072 log "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2026-02-26 21:59:50,085 log "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2026-02-26 21:59:50,088 log "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2026-02-26 21:59:50,089 log "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2026-02-26 21:59:50,091 log "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2026-02-26 21:59:50,092 log "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2026-02-26 21:59:50,100 log "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2026-02-26 21:59:50,105 log "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2026-02-26 21:59:50,125 log "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2026-02-26 21:59:50,942 log Not Found: /favicon.ico
+WARNING 2026-02-26 21:59:50,945 log "GET /favicon.ico HTTP/1.1" 404 20635
+INFO 2026-02-26 22:19:08,100 autoreload C:\Users\expers\Desktop\chatapp\account\signals.py changed, reloading.
+INFO 2026-02-26 22:19:30,771 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 22:20:02,414 autoreload C:\Users\expers\Desktop\chatapp\account\signals.py changed, reloading.
+INFO 2026-02-26 22:20:17,477 autoreload Watching for file changes with StatReloader
+INFO 2026-02-26 22:20:25,278 autoreload C:\Users\expers\Desktop\chatapp\account\signals.py changed, reloading.
+INFO 2026-02-26 22:20:34,959 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-26 22:35:57,942 log Not Found: /chat/current_user/
+WARNING 2026-02-26 22:35:58,020 log "GET /chat/current_user/ HTTP/1.1" 404 24309
+WARNING 2026-02-26 22:36:10,477 log Not Found: /chat/current_user/
+WARNING 2026-02-26 22:36:10,480 log "GET /chat/current_user/ HTTP/1.1" 404 24306
+WARNING 2026-02-26 22:36:10,832 log Forbidden: /groupchat/groups/
+WARNING 2026-02-26 22:36:10,835 log "GET /groupchat/groups/ HTTP/1.1" 403 58
+INFO 2026-02-26 22:36:29,812 log "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2026-02-26 22:36:29,862 views User logged in: AnonymousUser
+INFO 2026-02-26 22:36:34,975 log "POST /login/ HTTP/1.1" 200 31
+INFO 2026-02-26 22:36:37,540 log "GET /chat/chats/ HTTP/1.1" 200 143
+WARNING 2026-02-26 22:36:45,439 log Not Found: /chat/current_user/
+WARNING 2026-02-26 22:36:45,442 log "GET /chat/current_user/ HTTP/1.1" 404 24308
+INFO 2026-02-26 22:36:48,021 log "GET /groupchat/groups/ HTTP/1.1" 200 1834
+INFO 2026-02-26 22:36:49,872 log "OPTIONS /groupchat/groups/90e59e95-6260-4785-9796-ec1061b80251/join/ HTTP/1.1" 200 0
+INFO 2026-02-26 22:36:50,574 log "POST /groupchat/groups/90e59e95-6260-4785-9796-ec1061b80251/join/ HTTP/1.1" 200 38
+WARNING 2026-02-26 22:36:51,080 log Not Found: /chat/current_user/
+WARNING 2026-02-26 22:36:51,082 log "GET /chat/current_user/ HTTP/1.1" 404 24308
+INFO 2026-02-26 22:36:53,373 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 22:36:53,902 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 13038
+INFO 2026-02-26 22:36:55,047 log "GET /media/chat_images/img2_eMqbzZ8.jpg HTTP/1.1" 200 9262
+INFO 2026-02-26 22:36:55,156 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 22:36:55,219 log "GET /media/chat_images/img2_pTHzsYl.jpg HTTP/1.1" 200 9262
+INFO 2026-02-26 22:36:55,285 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 22:36:55,910 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 22:36:56,046 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 22:37:01,980 log "OPTIONS /groupchat/groupmessages/ HTTP/1.1" 200 0
+INFO 2026-02-26 22:37:11,663 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:11,882 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:12,107 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:12,318 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:12,501 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:12,799 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:12,981 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:13,056 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:13,274 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:13,598 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:13,717 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:13,911 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:14,073 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:14,221 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:14,348 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:14,960 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:15,103 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:15,231 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:15,395 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:15,670 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:15,829 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:15,995 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:16,223 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:16,427 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:16,648 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:16,841 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:17,085 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:17,331 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:17,521 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:17,937 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:18,114 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:18,263 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 199
+INFO 2026-02-26 22:37:18,397 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 199
+INFO 2026-02-26 22:37:18,504 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 19886
+INFO 2026-02-26 22:37:18,665 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 213
+INFO 2026-02-26 22:37:18,779 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 199
+INFO 2026-02-26 22:37:19,244 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:19,838 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:20,382 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:21,371 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:21,964 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:22,536 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:23,063 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:23,813 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:24,788 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:25,458 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:26,310 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:27,888 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:28,411 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:31,131 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:32,121 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:32,571 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:33,252 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:33,674 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:34,268 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:34,728 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:35,306 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+INFO 2026-02-26 22:37:35,780 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+WARNING 2026-02-26 22:37:36,203 log Too Many Requests: /groupchat/groupmessages/
+WARNING 2026-02-26 22:37:36,236 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 429 67
+WARNING 2026-02-26 22:37:36,789 log Too Many Requests: /groupchat/groupmessages/
+WARNING 2026-02-26 22:37:36,792 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 429 67
+INFO 2026-02-26 22:37:37,564 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20486
+WARNING 2026-02-26 22:37:37,682 log Too Many Requests: /groupchat/groupmessages/
+WARNING 2026-02-26 22:37:37,688 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 429 69
+WARNING 2026-02-26 22:37:37,917 log Too Many Requests: /groupchat/groupmessages/
+WARNING 2026-02-26 22:37:37,921 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 429 69
+WARNING 2026-02-26 22:37:38,183 log Too Many Requests: /groupchat/groupmessages/
+WARNING 2026-02-26 22:37:38,192 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 429 69
+WARNING 2026-02-26 22:37:38,322 log Too Many Requests: /groupchat/groupmessages/
+WARNING 2026-02-26 22:37:38,327 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 429 69
+WARNING 2026-02-26 22:37:38,698 log Too Many Requests: /groupchat/groupmessages/
+WARNING 2026-02-26 22:37:38,707 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 429 68
+WARNING 2026-02-26 22:37:38,922 log Too Many Requests: /groupchat/groupmessages/
+WARNING 2026-02-26 22:37:38,925 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 429 68
+WARNING 2026-02-26 22:37:39,011 log Too Many Requests: /groupchat/groupmessages/
+WARNING 2026-02-26 22:37:39,013 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 429 68
+WARNING 2026-02-26 22:37:39,359 log Too Many Requests: /groupchat/groupmessages/
+WARNING 2026-02-26 22:37:39,361 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 429 68
+WARNING 2026-02-26 22:37:39,662 log Too Many Requests: /groupchat/groupmessages/
+WARNING 2026-02-26 22:37:39,665 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 429 68
+WARNING 2026-02-26 22:38:02,099 log Not Found: /chat/current_user/
+WARNING 2026-02-26 22:38:02,102 log "GET /chat/current_user/ HTTP/1.1" 404 24307
+WARNING 2026-02-26 22:38:04,971 log Forbidden: /groupchat/groups/
+WARNING 2026-02-26 22:38:04,973 log "GET /groupchat/groups/ HTTP/1.1" 403 58
+INFO 2026-02-26 22:38:21,102 log "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2026-02-26 22:38:21,196 views User logged in: AnonymousUser
+INFO 2026-02-26 22:38:25,805 log "POST /login/ HTTP/1.1" 200 31
+INFO 2026-02-26 22:38:27,249 log "GET /chat/chats/ HTTP/1.1" 200 988
+WARNING 2026-02-26 22:38:36,773 log Not Found: /chat/current_user/
+WARNING 2026-02-26 22:38:36,776 log "GET /chat/current_user/ HTTP/1.1" 404 24309
+INFO 2026-02-26 22:38:38,747 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 22:38:41,134 log "OPTIONS /groupchat/groups/90e59e95-6260-4785-9796-ec1061b80251/join/ HTTP/1.1" 200 0
+INFO 2026-02-26 22:38:41,603 log "POST /groupchat/groups/90e59e95-6260-4785-9796-ec1061b80251/join/ HTTP/1.1" 200 29
+WARNING 2026-02-26 22:38:42,363 log Not Found: /chat/current_user/
+WARNING 2026-02-26 22:38:42,365 log "GET /chat/current_user/ HTTP/1.1" 404 24309
+INFO 2026-02-26 22:38:44,973 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 22:38:45,902 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20506
+INFO 2026-02-26 22:38:47,762 log "GET /media/chat_images/img2_eMqbzZ8.jpg HTTP/1.1" 200 9262
+INFO 2026-02-26 22:38:47,763 log "GET /media/chat_images/img2_pTHzsYl.jpg HTTP/1.1" 200 9262
+INFO 2026-02-26 22:38:47,997 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 22:38:48,310 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 22:38:48,413 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 22:38:48,830 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 22:38:49,153 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 22:38:49,384 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 22:38:50,876 log "OPTIONS /groupchat/groupmessages/ HTTP/1.1" 200 0
+INFO 2026-02-26 22:38:51,240 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 204
+INFO 2026-02-26 22:38:51,811 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20711
+INFO 2026-02-26 22:39:01,308 log "POST /groupchat/groups/90e59e95-6260-4785-9796-ec1061b80251/join/ HTTP/1.1" 200 29
+WARNING 2026-02-26 22:39:02,575 log Not Found: /chat/current_user/
+WARNING 2026-02-26 22:39:02,577 log "GET /chat/current_user/ HTTP/1.1" 404 24310
+INFO 2026-02-26 22:39:04,733 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 22:39:05,669 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20692
+INFO 2026-02-26 22:39:18,632 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 227
+INFO 2026-02-26 22:39:19,210 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 20920
+INFO 2026-02-26 22:39:34,513 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 235
+INFO 2026-02-26 22:39:35,470 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 21156
+INFO 2026-02-26 22:39:50,316 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 245
+INFO 2026-02-26 22:39:50,936 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 21402
+INFO 2026-02-26 22:39:57,406 log "OPTIONS /groupchat/groupmessages/421/ HTTP/1.1" 200 0
+INFO 2026-02-26 22:39:57,855 log "DELETE /groupchat/groupmessages/421/ HTTP/1.1" 200 28
+INFO 2026-02-26 22:39:58,276 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 21402
+WARNING 2026-02-26 22:40:07,714 log Not Found: /chat/current_user/
+WARNING 2026-02-26 22:40:07,716 log "GET /chat/current_user/ HTTP/1.1" 404 24309
+INFO 2026-02-26 22:40:09,736 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 22:40:13,561 log "POST /groupchat/groups/90e59e95-6260-4785-9796-ec1061b80251/join/ HTTP/1.1" 200 29
+WARNING 2026-02-26 22:40:14,110 log Not Found: /chat/current_user/
+WARNING 2026-02-26 22:40:14,112 log "GET /chat/current_user/ HTTP/1.1" 404 24309
+INFO 2026-02-26 22:40:15,835 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 22:40:16,338 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 21440
+INFO 2026-02-26 22:40:33,107 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 275
+INFO 2026-02-26 22:40:34,595 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 21678
+INFO 2026-02-26 22:40:59,182 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 253
+INFO 2026-02-26 22:40:59,674 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 21932
+INFO 2026-02-26 22:41:00,629 log "GET /media/chat_images/img2_DL9S732.jpg HTTP/1.1" 200 9262
+INFO 2026-02-26 22:41:39,607 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 274
+INFO 2026-02-26 22:41:40,363 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22207
+INFO 2026-02-26 22:41:41,507 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 22:41:41,579 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 22:41:52,219 log "POST /groupchat/groupmessages/ HTTP/1.1" 201 254
+INFO 2026-02-26 22:41:53,016 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 22:41:54,204 log "GET /media/chat_audio/voice_lzrvqN9.webm HTTP/1.1" 200 27344
+WARNING 2026-02-26 23:03:18,973 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:03:19,040 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:03:19,054 basehttp - Broken pipe from ('127.0.0.1', 64649)
+WARNING 2026-02-26 23:03:19,056 log "GET /chat/current_user/ HTTP/1.1" 404 24310
+WARNING 2026-02-26 23:04:08,119 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:04:08,124 log "GET /chat/current_user/ HTTP/1.1" 404 24308
+WARNING 2026-02-26 23:04:08,279 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:04:08,283 log "GET /chat/current_user/ HTTP/1.1" 404 24309
+INFO 2026-02-26 23:04:09,049 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+WARNING 2026-02-26 23:04:16,058 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:04:16,062 log "GET /chat/current_user/ HTTP/1.1" 404 24308
+INFO 2026-02-26 23:04:16,686 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 23:04:21,562 log "POST /groupchat/groups/90e59e95-6260-4785-9796-ec1061b80251/join/ HTTP/1.1" 200 29
+WARNING 2026-02-26 23:04:21,968 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:04:21,971 log "GET /chat/current_user/ HTTP/1.1" 404 24308
+INFO 2026-02-26 23:04:23,834 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 23:04:24,284 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22504
+INFO 2026-02-26 23:04:25,055 log "GET /media/chat_images/img2_DL9S732.jpg HTTP/1.1" 200 9262
+INFO 2026-02-26 23:04:25,640 log "GET /media/chat_audio/voice_lzrvqN9.webm HTTP/1.1" 200 27344
+INFO 2026-02-26 23:04:30,050 basehttp - Broken pipe from ('127.0.0.1', 64673)
+WARNING 2026-02-26 23:04:30,124 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:04:30,127 log "GET /chat/current_user/ HTTP/1.1" 404 24308
+INFO 2026-02-26 23:04:31,830 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 23:04:33,345 log "POST /groupchat/groups/90e59e95-6260-4785-9796-ec1061b80251/join/ HTTP/1.1" 200 29
+WARNING 2026-02-26 23:04:33,644 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:04:33,646 log "GET /chat/current_user/ HTTP/1.1" 404 24308
+INFO 2026-02-26 23:04:35,468 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 23:04:35,913 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:04:36,660 log "GET /media/chat_images/img2_DL9S732.jpg HTTP/1.1" 304 0
+INFO 2026-02-26 23:04:37,136 log "GET /media/chat_audio/voice_lzrvqN9.webm HTTP/1.1" 304 0
+WARNING 2026-02-26 23:08:40,806 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:08:40,832 log "GET /chat/current_user/ HTTP/1.1" 404 24310
+WARNING 2026-02-26 23:08:40,900 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:08:40,915 log "GET /chat/current_user/ HTTP/1.1" 404 24310
+INFO 2026-02-26 23:08:41,650 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 23:08:41,717 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+WARNING 2026-02-26 23:08:43,257 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:08:43,261 log "GET /chat/current_user/ HTTP/1.1" 404 24308
+WARNING 2026-02-26 23:08:43,343 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:08:43,345 log "GET /chat/current_user/ HTTP/1.1" 404 24308
+INFO 2026-02-26 23:08:43,698 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 23:08:43,770 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+WARNING 2026-02-26 23:08:49,143 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:08:49,146 log "GET /chat/current_user/ HTTP/1.1" 404 24308
+WARNING 2026-02-26 23:08:49,221 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:08:49,223 log "GET /chat/current_user/ HTTP/1.1" 404 24309
+INFO 2026-02-26 23:08:50,320 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 23:08:50,469 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+WARNING 2026-02-26 23:09:05,228 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:09:05,230 log "GET /chat/current_user/ HTTP/1.1" 404 24310
+INFO 2026-02-26 23:09:37,583 views User logged in: aizal
+INFO 2026-02-26 23:09:42,005 log "POST /login/ HTTP/1.1" 200 31
+INFO 2026-02-26 23:09:45,585 log "GET /chat/chats/ HTTP/1.1" 200 143
+WARNING 2026-02-26 23:09:57,926 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:09:57,928 log "GET /chat/current_user/ HTTP/1.1" 404 24309
+WARNING 2026-02-26 23:13:12,792 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:13:12,804 log "GET /chat/current_user/ HTTP/1.1" 404 24310
+WARNING 2026-02-26 23:13:12,898 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:13:13,039 log "GET /chat/current_user/ HTTP/1.1" 404 24310
+WARNING 2026-02-26 23:13:14,585 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:13:14,596 log "GET /chat/current_user/ HTTP/1.1" 404 24309
+WARNING 2026-02-26 23:13:14,966 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:13:15,182 basehttp - Broken pipe from ('127.0.0.1', 64694)
+INFO 2026-02-26 23:13:15,640 basehttp - Broken pipe from ('127.0.0.1', 64650)
+INFO 2026-02-26 23:13:16,441 basehttp - Broken pipe from ('127.0.0.1', 64797)
+INFO 2026-02-26 23:13:16,589 basehttp - Broken pipe from ('127.0.0.1', 64802)
+WARNING 2026-02-26 23:13:16,644 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:13:16,647 log "GET /chat/current_user/ HTTP/1.1" 404 24310
+WARNING 2026-02-26 23:13:16,697 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:13:16,700 log "GET /chat/current_user/ HTTP/1.1" 404 24310
+INFO 2026-02-26 23:13:17,401 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 23:13:17,463 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 23:13:24,033 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+WARNING 2026-02-26 23:13:27,360 log Not Found: /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/
+INFO 2026-02-26 23:13:27,362 basehttp - Broken pipe from ('127.0.0.1', 64820)
+INFO 2026-02-26 23:13:27,506 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+WARNING 2026-02-26 23:13:27,699 log Not Found: /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/
+WARNING 2026-02-26 23:13:27,702 log "GET /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/ HTTP/1.1" 404 20794
+INFO 2026-02-26 23:13:28,711 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+WARNING 2026-02-26 23:13:35,245 log Not Found: /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/
+WARNING 2026-02-26 23:13:35,312 log Not Found: /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/
+INFO 2026-02-26 23:13:35,323 basehttp - Broken pipe from ('127.0.0.1', 64830)
+INFO 2026-02-26 23:13:35,324 basehttp - Broken pipe from ('127.0.0.1', 64847)
+WARNING 2026-02-26 23:13:35,394 log Not Found: /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/
+INFO 2026-02-26 23:13:35,399 basehttp - Broken pipe from ('127.0.0.1', 64839)
+WARNING 2026-02-26 23:13:35,490 log Not Found: /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/
+INFO 2026-02-26 23:13:35,494 basehttp - Broken pipe from ('127.0.0.1', 64836)
+INFO 2026-02-26 23:13:35,568 log "GET /media/chat_images/img2_pTHzsYl.jpg HTTP/1.1" 200 9262
+WARNING 2026-02-26 23:13:35,622 log Not Found: /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/
+INFO 2026-02-26 23:13:35,626 basehttp - Broken pipe from ('127.0.0.1', 64835)
+WARNING 2026-02-26 23:13:35,688 log Not Found: /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/
+INFO 2026-02-26 23:13:35,692 basehttp - Broken pipe from ('127.0.0.1', 64838)
+INFO 2026-02-26 23:13:35,775 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+WARNING 2026-02-26 23:13:35,853 log Not Found: /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/
+INFO 2026-02-26 23:13:35,856 basehttp - Broken pipe from ('127.0.0.1', 64843)
+INFO 2026-02-26 23:13:35,943 log "GET /media/chat_images/img2_DL9S732.jpg HTTP/1.1" 200 9262
+INFO 2026-02-26 23:13:36,022 log "GET /media/chat_images/img2_eMqbzZ8.jpg HTTP/1.1" 200 9262
+WARNING 2026-02-26 23:13:36,092 log Not Found: /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/
+INFO 2026-02-26 23:13:36,096 basehttp - Broken pipe from ('127.0.0.1', 64837)
+WARNING 2026-02-26 23:13:36,178 log Not Found: /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/
+WARNING 2026-02-26 23:13:36,187 log "GET /ws/groupchat/90e59e95-6260-4785-9796-ec1061b80251/ HTTP/1.1" 404 20796
+INFO 2026-02-26 23:13:36,509 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:36,940 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:37,471 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:37,908 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:38,414 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:38,952 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:39,461 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:40,101 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:40,910 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:41,443 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:42,539 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:43,085 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:43,627 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:44,151 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:44,858 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:13:44,983 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:13:45,117 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:13:45,261 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:13:45,423 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:45,731 log "GET /media/chat_audio/voice_lzrvqN9.webm HTTP/1.1" 200 27344
+INFO 2026-02-26 23:13:45,945 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:13:46,299 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:13:46,657 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:46,855 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:13:46,960 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:13:47,130 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:13:47,381 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:13:47,473 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:13:47,621 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:47,720 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:13:47,794 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:13:48,028 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:13:49,252 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:13:50,421 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:13:50,698 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:13:50,757 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:13:52,312 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:13:52,370 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:13:52,425 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:13:52,473 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:13:55,363 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:13:55,982 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:00,043 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:00,245 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:00,392 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:00,798 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:00,941 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:14:01,149 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22462
+INFO 2026-02-26 23:14:01,406 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:01,640 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:01,843 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:01,970 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+WARNING 2026-02-26 23:14:02,081 log Forbidden: /groupchat/groupmessages/
+WARNING 2026-02-26 23:14:02,087 log "POST /groupchat/groupmessages/ HTTP/1.1" 403 45
+WARNING 2026-02-26 23:14:02,210 log Forbidden: /groupchat/groupmessages/
+WARNING 2026-02-26 23:14:02,216 log "POST /groupchat/groupmessages/ HTTP/1.1" 403 45
+INFO 2026-02-26 23:14:02,341 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:02,510 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:02,629 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:02,739 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:02,885 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:03,006 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:03,201 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:03,354 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:03,454 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:03,593 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:03,687 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:03,806 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:03,954 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:04,096 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:04,207 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:04,327 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:04,509 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:04,684 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:04,809 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:04,968 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:05,159 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:05,304 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:05,418 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+WARNING 2026-02-26 23:14:05,534 log Forbidden: /groupchat/groupmessages/
+WARNING 2026-02-26 23:14:05,539 log "POST /groupchat/groupmessages/ HTTP/1.1" 403 45
+INFO 2026-02-26 23:14:05,652 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:05,766 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:05,871 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:05,960 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:06,044 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:06,189 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:06,349 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:06,512 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:06,613 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:06,736 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:06,840 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:07,020 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:07,206 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:07,311 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:07,407 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:07,479 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:07,530 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:07,580 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:07,785 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:08,456 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:08,520 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:08,682 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:08,770 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:08,829 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:09,268 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:09,360 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:09,420 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:10,010 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:10,817 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:11,244 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:11,357 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:11,450 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:11,718 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:12,105 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:12,300 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:12,399 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:12,484 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:12,585 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:12,721 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:12,722 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:13,000 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:13,335 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:13,539 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:13,633 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:13,711 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:14,015 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:14,260 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:14,320 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:14,461 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:14,517 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:15,228 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:15,561 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:15,670 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:15,796 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:15,881 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:15,935 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:16,247 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:16,396 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:16,761 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:16,838 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:16,926 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:16,997 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:17,293 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:17,515 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:17,946 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:18,042 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:18,140 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:18,274 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:18,341 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:18,587 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:18,695 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:18,980 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:19,238 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:19,344 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:20,810 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:21,084 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:21,199 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:21,308 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:21,429 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:21,844 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:21,939 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:22,001 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:22,217 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:22,289 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:22,370 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:22,731 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:23,103 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:23,372 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:23,577 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:23,705 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:23,832 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:23,930 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:24,048 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:24,232 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:24,503 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:24,659 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:24,771 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:24,883 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:25,065 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:25,190 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:25,318 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:25,434 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:25,594 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:25,803 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:25,971 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:26,079 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:26,316 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:26,339 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:27,106 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:27,279 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:27,349 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:27,696 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:27,788 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:28,001 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:28,844 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:28,904 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:28,996 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:29,125 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:29,219 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:29,639 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:29,720 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:29,905 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:29,995 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:30,196 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:30,282 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:30,337 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:30,684 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:30,854 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:30,998 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:31,144 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:31,434 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:31,597 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:31,735 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:31,916 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:32,000 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:32,079 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:32,293 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:32,442 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:32,683 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:32,829 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:32,942 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:33,016 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:33,094 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:33,165 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:33,461 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:33,665 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:33,855 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:33,995 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:34,139 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:34,301 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:34,439 log "GET /media/chat_audio/voice_f7HtADT.webm HTTP/1.1" 200 20637
+INFO 2026-02-26 23:14:34,533 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:34,746 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:34,877 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:35,000 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:35,127 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:35,285 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:35,395 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:35,467 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:35,535 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:35,679 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:35,790 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:36,007 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:36,089 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:36,196 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:36,390 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:36,581 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:36,722 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:36,854 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:37,007 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:37,167 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:37,265 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:37,342 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:37,512 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:37,597 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:37,740 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:38,026 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:38,158 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:38,288 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:38,420 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:38,478 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:38,531 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:38,650 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:38,844 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:39,175 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:39,311 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:39,456 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:39,610 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:39,804 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:39,965 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:40,220 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:40,281 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:40,340 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:40,589 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:40,737 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:40,976 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:41,178 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:41,480 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:41,649 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:41,752 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:41,989 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:42,374 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:42,573 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:42,726 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:42,878 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:43,016 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:43,276 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:43,476 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:43,602 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:43,776 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:43,931 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:44,143 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:44,362 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:44,551 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:44,697 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:44,859 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:45,017 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:45,180 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:45,332 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:45,437 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:45,569 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:45,687 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:45,763 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:45,895 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:46,022 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:46,131 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:46,284 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:46,588 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:46,731 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:46,906 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:47,080 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:47,212 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:47,338 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:47,490 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:47,731 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:47,902 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:48,063 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:48,299 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:48,457 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:48,613 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:48,740 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:48,893 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:49,003 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:49,099 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:49,234 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:49,483 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:49,692 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:49,808 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:49,873 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:50,022 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:50,234 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:50,449 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:50,715 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:50,885 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:50,998 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:51,191 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:51,370 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:51,564 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:51,824 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:52,002 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:52,131 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:52,226 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:52,325 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:52,454 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:52,577 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:52,760 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:52,919 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:52,931 basehttp - Broken pipe from ('127.0.0.1', 64827)
+INFO 2026-02-26 23:14:53,139 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:53,257 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:53,370 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:53,465 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:53,554 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:53,640 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:53,733 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:53,916 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:54,304 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:54,364 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:54,506 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:54,648 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:54,787 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:55,291 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:55,691 basehttp - Broken pipe from ('127.0.0.1', 64826)
+INFO 2026-02-26 23:14:55,936 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:56,163 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:56,455 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:56,455 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:56,638 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:56,797 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:56,916 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:57,060 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:57,074 basehttp - Broken pipe from ('127.0.0.1', 64871)
+INFO 2026-02-26 23:14:57,207 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:57,303 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:57,397 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:57,501 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:57,637 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:57,718 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:57,816 basehttp - Broken pipe from ('127.0.0.1', 65234)
+INFO 2026-02-26 23:14:57,978 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:58,175 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:58,347 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:58,530 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:58,629 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:58,767 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:58,953 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:59,139 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:59,286 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:59,393 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:59,554 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:59,657 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:14:59,666 basehttp - Broken pipe from ('127.0.0.1', 65242)
+INFO 2026-02-26 23:14:59,819 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:14:59,960 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:00,091 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:00,258 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:00,430 basehttp - Broken pipe from ('127.0.0.1', 65205)
+INFO 2026-02-26 23:15:00,572 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:00,654 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:00,730 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:00,939 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:01,000 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:01,136 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:01,256 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:01,368 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:01,610 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:01,672 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:01,811 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:01,892 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:01,991 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:02,063 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:02,311 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:02,407 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:02,465 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:02,572 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:02,862 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:02,930 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:03,049 basehttp - Broken pipe from ('127.0.0.1', 64808)
+INFO 2026-02-26 23:15:03,408 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:03,479 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:03,578 basehttp - Broken pipe from ('127.0.0.1', 65261)
+INFO 2026-02-26 23:15:03,671 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:03,746 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:03,843 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:03,985 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:04,235 basehttp - Broken pipe from ('127.0.0.1', 65273)
+INFO 2026-02-26 23:15:04,311 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:04,405 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:04,472 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:04,579 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:04,743 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:05,084 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:05,304 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:05,408 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:05,506 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:05,659 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:06,002 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:06,198 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:06,354 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:06,488 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:06,648 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:06,778 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:06,858 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:06,916 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:07,015 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:07,090 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:07,178 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:07,761 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:07,820 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:07,877 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:07,984 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:08,044 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:08,098 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:08,494 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:08,597 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:08,814 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:08,960 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:09,062 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:09,175 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:09,312 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:09,468 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:09,684 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:09,694 basehttp - Broken pipe from ('127.0.0.1', 65295)
+INFO 2026-02-26 23:15:09,831 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:09,946 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:10,000 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:10,251 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:10,562 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:10,704 basehttp - Broken pipe from ('127.0.0.1', 65333)
+INFO 2026-02-26 23:15:10,780 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:10,878 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:11,011 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:11,081 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:11,217 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:11,231 basehttp - Broken pipe from ('127.0.0.1', 65281)
+INFO 2026-02-26 23:15:11,520 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+INFO 2026-02-26 23:15:11,607 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:11,764 basehttp - Broken pipe from ('127.0.0.1', 65289)
+INFO 2026-02-26 23:15:12,073 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:12,160 log "GET /media/chat_audio/voice_8Z69jmV.webm HTTP/1.1" 200 17617
+INFO 2026-02-26 23:15:12,229 log "GET /media/chat_audio/voice_bCx53M9.webm HTTP/1.1" 200 23069
+WARNING 2026-02-26 23:19:27,520 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:19:27,549 log "GET /chat/current_user/ HTTP/1.1" 404 24310
+WARNING 2026-02-26 23:19:27,632 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:19:27,635 log "GET /chat/current_user/ HTTP/1.1" 404 24310
+WARNING 2026-02-26 23:19:29,894 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:19:29,897 log "GET /chat/current_user/ HTTP/1.1" 404 24310
+INFO 2026-02-26 23:19:30,003 basehttp - Broken pipe from ('127.0.0.1', 65255)
+INFO 2026-02-26 23:19:30,116 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+WARNING 2026-02-26 23:19:34,616 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:19:34,619 log "GET /chat/current_user/ HTTP/1.1" 404 24308
+WARNING 2026-02-26 23:19:35,947 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:35,961 basehttp - Broken pipe from ('127.0.0.1', 65222)
+WARNING 2026-02-26 23:19:36,719 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:36,792 basehttp - Broken pipe from ('127.0.0.1', 65346)
+WARNING 2026-02-26 23:19:36,907 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:36,917 basehttp - Broken pipe from ('127.0.0.1', 65327)
+WARNING 2026-02-26 23:19:37,223 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:37,255 basehttp - Broken pipe from ('127.0.0.1', 65340)
+WARNING 2026-02-26 23:19:37,768 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:37,771 basehttp - Broken pipe from ('127.0.0.1', 65385)
+WARNING 2026-02-26 23:19:38,451 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:38,455 basehttp - Broken pipe from ('127.0.0.1', 65388)
+WARNING 2026-02-26 23:19:38,562 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:38,673 basehttp - Broken pipe from ('127.0.0.1', 65391)
+WARNING 2026-02-26 23:19:38,940 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:38,945 basehttp - Broken pipe from ('127.0.0.1', 65394)
+WARNING 2026-02-26 23:19:39,047 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:39,133 basehttp - Broken pipe from ('127.0.0.1', 65397)
+WARNING 2026-02-26 23:19:39,238 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:39,241 basehttp - Broken pipe from ('127.0.0.1', 65400)
+WARNING 2026-02-26 23:19:39,574 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:39,578 basehttp - Broken pipe from ('127.0.0.1', 65403)
+WARNING 2026-02-26 23:19:39,793 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:39,796 basehttp - Broken pipe from ('127.0.0.1', 65406)
+WARNING 2026-02-26 23:19:40,300 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:40,331 basehttp - Broken pipe from ('127.0.0.1', 65412)
+WARNING 2026-02-26 23:19:40,410 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:40,413 basehttp - Broken pipe from ('127.0.0.1', 65409)
+WARNING 2026-02-26 23:19:40,720 log Not Found: /chat/current_user/
+INFO 2026-02-26 23:19:40,723 basehttp - Broken pipe from ('127.0.0.1', 65416)
+WARNING 2026-02-26 23:19:40,773 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:19:40,775 log "GET /chat/current_user/ HTTP/1.1" 404 24308
+INFO 2026-02-26 23:35:57,013 log "POST /groupchat/groups/90e59e95-6260-4785-9796-ec1061b80251/join/ HTTP/1.1" 200 29
+WARNING 2026-02-26 23:35:57,604 log Not Found: /chat/current_user/
+WARNING 2026-02-26 23:35:57,606 log "GET /chat/current_user/ HTTP/1.1" 404 24308
+INFO 2026-02-26 23:36:00,428 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+INFO 2026-02-26 23:36:02,115 log "GET /groupchat/groupmessages/?group=90e59e95-6260-4785-9796-ec1061b80251 HTTP/1.1" 200 22504
+INFO 2026-02-26 23:36:03,036 log "GET /media/chat_images/img2_DL9S732.jpg HTTP/1.1" 304 0
+INFO 2026-02-26 23:36:03,495 log "GET /media/chat_audio/voice_lzrvqN9.webm HTTP/1.1" 304 0
+INFO 2026-02-26 23:39:37,015 log "GET /groupchat/groups/ HTTP/1.1" 200 1842
+WARNING 2026-02-27 00:01:03,854 log Not Found: /chats/
+WARNING 2026-02-27 00:01:11,413 log Not Found: /messages/
+WARNING 2026-02-27 00:01:18,228 log Not Found: /messages/1/
+WARNING 2026-02-27 00:08:27,862 log Not Found: /messages/2/
+INFO 2026-02-27 00:35:36,321 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 00:36:09,467 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-27 00:36:55,207 log Not Found: /messages/2/
+WARNING 2026-02-27 00:44:42,648 log Not Found: /messages/2/
+WARNING 2026-02-27 00:55:29,168 log Forbidden: /chat/messages/2/
+INFO 2026-02-27 01:45:23,794 autoreload Watching for file changes with StatReloader
+WARNING 2026-02-27 01:45:45,013 log Bad Request: /register/
+WARNING 2026-02-27 01:45:45,034 log "POST /register/ HTTP/1.1" 400 26458
+INFO 2026-02-27 01:45:45,354 log "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+WARNING 2026-02-27 01:46:21,836 log Method Not Allowed: /login/
+WARNING 2026-02-27 01:46:21,839 log "GET /login/ HTTP/1.1" 405 25870
+INFO 2026-02-27 01:46:33,219 views User logged in: AnonymousUser
+INFO 2026-02-27 01:46:39,338 log "POST /login/ HTTP/1.1" 200 25874
+INFO 2026-02-27 01:46:49,025 log "GET /groupchat/ HTTP/1.1" 200 24219
+INFO 2026-02-27 01:46:55,107 log "GET /__debug__/render_panel/?request_id=b462f5084c0641fe9c3425b82d7b7608&panel_id=SQLPanel HTTP/1.1" 200 22902
+INFO 2026-02-27 01:47:00,835 log "GET /groupchat/groupmessages/ HTTP/1.1" 200 78246
+INFO 2026-02-27 01:47:23,982 log "GET /groupchat/groupmessages/395 HTTP/1.1" 301 0
+INFO 2026-02-27 01:47:24,515 log "GET /groupchat/groupmessages/395/ HTTP/1.1" 200 31330
+INFO 2026-02-27 01:47:28,666 log "GET /__debug__/render_panel/?request_id=6955158e93074ec5ab02c96e8c93d81b&panel_id=SQLPanel HTTP/1.1" 200 56383
+INFO 2026-02-27 01:47:40,051 log "PUT /groupchat/groupmessages/395/ HTTP/1.1" 200 31349
+INFO 2026-02-27 01:47:40,455 log "GET /__debug__/history_sidebar/?request_id=f7f6801da1ac47e586ec816b719b48ea HTTP/1.1" 200 10238
+INFO 2026-02-27 01:47:42,548 log "GET /__debug__/render_panel/?request_id=f7f6801da1ac47e586ec816b719b48ea&panel_id=SQLPanel HTTP/1.1" 200 85623
+INFO 2026-02-27 01:47:55,370 log "GET /groupchat/groupmessages/ HTTP/1.1" 200 78256
+INFO 2026-02-27 01:47:58,357 log "GET /__debug__/render_panel/?request_id=78a62cbda1e940c1aeb0c08d623bb46c&panel_id=SQLPanel HTTP/1.1" 200 57290
+INFO 2026-02-27 02:10:31,134 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:17:17,509 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:17:33,427 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:21:05,268 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:21:16,511 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:21:20,546 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:21:30,880 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:21:38,816 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:21:49,966 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:22:26,868 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:22:35,199 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:22:40,798 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:22:53,626 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:28:49,375 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:29:05,153 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:34:04,606 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:34:14,881 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:34:22,401 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:34:26,975 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:34:59,154 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:35:08,793 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:37:46,784 autoreload C:\Users\expers\Desktop\chatapp\users\apps.py changed, reloading.
+INFO 2026-02-27 02:37:57,835 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:41:55,690 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:42:06,834 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:43:38,673 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:43:44,766 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:43:47,057 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:43:53,640 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:47:48,968 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:47:57,601 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:50:38,686 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:50:48,741 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 02:50:53,125 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 02:51:00,225 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 03:01:27,180 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 03:01:37,575 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 03:04:06,246 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 03:04:17,610 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 03:04:53,834 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 03:05:03,944 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 03:07:53,508 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 03:08:05,358 autoreload Watching for file changes with StatReloader
+INFO 2026-02-27 03:08:11,734 autoreload C:\Users\expers\Desktop\chatapp\chatapp\settings.py changed, reloading.
+INFO 2026-02-27 03:08:23,222 autoreload Watching for file changes with StatReloader

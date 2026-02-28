@@ -1,3 +1,5 @@
+
+
 """
 Django settings for chatapp project.
 
@@ -28,7 +30,13 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
+# Application definition 
+
+#from pathlib import Path
+
+# Disable token authentication for dj-rest-auth (session-only)
+#TOKEN_MODEL = None
+#REST_USE_TOKENS = False
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -38,16 +46,29 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'account',
+    'users',
     'chat',
     'groupchat',
     'channels',
     'axes',
     'corsheaders',
     'debug_toolbar',
-    'audit', 
+    'audit',   
+    # this ifor the scoial login
+    'django.contrib.sites', 
+    'rest_framework.authtoken',
+    #'chatapp.allauth_account_override.CustomAllAuthAccountConfig', 
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook',
+    'dj_rest_auth',
+    'dj_rest_auth.registration',
 
-]
+] 
+
+
 
 MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware', 
@@ -58,6 +79,8 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+
+    'allauth.account.middleware.AccountMiddleware', #n32
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
    
@@ -143,7 +166,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = 'account.User'
+AUTH_USER_MODEL = 'users.User'
 
 
 
@@ -192,7 +215,7 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
 
-AXES_LOCKOUT_PARAMETERS = ["username"]
+AXES_LOCKOUT_PARAMETERS = ["username","ip_address"]
 AXES_RESET_ON_SUCCESS = True
 AXES_HANDLER = 'axes.handlers.database.AxesDatabaseHandler'
 
@@ -299,7 +322,6 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'UTC'  
-# format suffixas 
 
 
 
@@ -310,13 +332,23 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'iramlatif32@gmail.com'
-EMAIL_HOST_PASSWORD = 'your-email-password'  
+EMAIL_HOST_PASSWORD = 'owvn dfbz tldv uodd'  
 
 
 
 
 
+# Required by django-allauth
+SITE_ID = 1
 
+# Optional account settings
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_AUTHENTICATION_METHOD = 'username'  # login by username
+ACCOUNT_EMAIL_VERIFICATION = 'none'         
+
+# REST Framework Auth
+REST_USE_JWT = False 
 
 
 
